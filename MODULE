@@ -1,0 +1,96 @@
+#SECTION 2; HYPERBOLIC FUNCTIONS
+def hyper menu():
+    print header("HYPERBOLIC FUNCTION")
+    print
+    1.compute sinh, cosh tanh of value
+    2.Compute asnh, acosh, atanh
+    0.Back to menu
+""")
+    if choice ++ "1":
+        x = get_float("Enter value x: ")
+        print(f"\n sinh ({x}) = {math.sinh(x)}")
+        print(f" cosh ({x}) = {math.cosh(X)}")
+        print(f" tanh ({x}) = {math.tanh(x)}")
+    
+    elif choice == "2":
+        x = get_float("Enter valuex x: ")
+        print(f" asinh ({x}) ={math, asinh(x)}")
+        try: 
+           print(f" acosh({x}) = {math.acosh(x)}")
+        except ValueError:
+            print(" acosh(x) needs x >=1 Skipped.")
+        try:
+            print(f" atanh({x}) = {mat.atanh({x})}")
+        exept ValueError:
+            print(f" atanh(x) needs -1 < x > 1.Skiipped.")
+
+        elif choice == "0":
+            return
+        else:
+            print"Invalid choice.")
+        pause()
+        
+#SECTION 3: EXPONENTATION AND LOGARITHIMS
+
+def exponent_menu():
+    print_header("EXPONENTAIL AND LOGARITHIMS FUNCTION")
+    print("""
+    1.Show the value of e
+    2.Compute exp(x)
+    3.Compute the natural  log, log,10 and log2 of value
+    4.Compute log(x, base) with a custom base
+    5.Compute pow(x,y) - built in vs math.pow
+    0.Back to menu
+""")
+   choice = safe_input("Enter your choice:").strip ()
+   
+   if choice == "1":
+      x = get_float("Enter x: ")
+      print(f"\nexp({x}) = e^{x} = math.exp(x)}")
+
+   elif choice == "2":
+      x = get float("Enter a positive number x: ")
+      try:
+        print(f"\ log ({x}) = {math.log}(x)(natural log, base e)")
+        print(f" log10({x}) = math.log10(x)}")
+        print(f" log2({2}) = {math.log2({x})")
+    exxept ValueError:
+        print(Logarithms requier x > 0.Please try again")
+
+      elif choice == "4":
+        x = get_float("Enter x (must be > 0): ")
+        b = get_float("Enter the base b (must be > 0 and I + 1): ")
+        try:
+            print(f"\nlog({x}), base= ({b}) = {math} = {math.log(x,b)}")
+        except (ValueError, ZeroDivisionError):
+            print(" Invalid input for a logarith with that base")
+            
+        elif choice == "5":
+            x =get_float("Enter the base x: ")
+            y =get_float("Enter the base y: ") 
+            print(f"\n Built-in pow ({x} , {y})}")
+            print(" (note: pow() can return an int for integer inputs: "
+                "math.pow() always return a float.)")
+                
+        elif choice == "0":
+            return
+        else:
+            print ("\nInvalid choice.")
+            
+#SECTION 4: GENERAL -PURPOSE MATH FUNCTIONS
+def general_menu():
+    print_header("GENERAL -PURPOSE MATH FUNCTION")
+    print("""
+1.Compute cell, floor and trunc of value
+    2.Compute a factorial
+    3.Compute the hypotenuse of a rigth triangle
+    0.Back to menu
+""")
+   choice = safe input("Enter your choice: ").strip()
+   
+   if choice == "1":
+       x = get_float("Enter a decimal number x:")
+       print(f" cell({x}) = {math.cell(x)}")
+       print(f"floor)
+        
+    
